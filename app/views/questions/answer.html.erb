@@ -1,5 +1,23 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="alert alert-danger" role="alert">
+      <div class="you">
+        <h2> You:</h2>
+        <p><%= @answer %></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p><%= @answer %></p>
+<div class="container">
+  <div class="wrapper">
+    <div class="alert alert-primary" role="alert">
+      <div class="coach">
+        <h2>Super Coach:</h2>
+        <p><%= @answer_to %></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-<h1>Je suis un Answer</h1>
+<span class="badge badge-warning"><%= link_to "Ask a other question", ask_path %></span>

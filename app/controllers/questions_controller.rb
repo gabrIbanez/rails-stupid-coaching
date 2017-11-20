@@ -7,13 +7,13 @@ class QuestionsController < ApplicationController
 
   def answer
     @answer = params[:questions]
-
-    if @answer == "I am going to work right now"
+    @answer_to = @answer
+    if @answer_to == "I am going to work right now"
       @answer = "Great!"
-    elsif @answer.include? "?"
-      @answer = "Silly question, get dressed and go to work!"
+    elsif @answer_to.include? "?"
+      @answer_to = "Silly question, get dressed and go to work!"
     else
-      @answer = "I don't care, get dressed and go to work!"
+      @answer_to = "I don't care, get dressed and go to work!"
     end
   end
 end
